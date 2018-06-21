@@ -16,7 +16,7 @@ By the Direct Methods in the Calculus of Variations and strict convexity, the ab
 
 We compute the optimal pair (optimal control, optimal state) by using the well-known Riccati's theory (see, for instance, [1, Lemma 2.6] and [2, section 4.3]).
 
-For more details and references, see the pdf.
+For more details, we refer to the file "RiccatiAlgorithm.pdf".
 
 
 
@@ -29,6 +29,7 @@ For more details and references, see the pdf.
 
 [1] A. PORRETTA and E. ZUAZUA, _Long time versus steady state optimal control_, SIAM Journal
 on Control and Optimization, 51 (2013), pp. 4242–4273.
+
 [2] E. TRÉLAT, _Contrôle optimal: théorie & applications_, Vuibert, 2008.
 
 ## Acknowledgments
