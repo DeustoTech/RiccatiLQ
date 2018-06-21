@@ -1,4 +1,4 @@
-# How to solve an LQ problem with nonzero targets by Riccati's theory
+# How to solve an LQ problem with time-varying targets by Riccati's theory
 
 In this short tutorial, we explain how to use Riccati's theory to solve an LQ control problem with targets. The related MATLAB code is downloadable freely.
 
@@ -18,10 +18,59 @@ We compute the optimal pair (optimal control, optimal state) by using the well-k
 
 For more details, we refer to the file "RiccatiAlgorithm.pdf".
 
+## Example
+
+Take
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?A%3D%20%5Cbegin%7Bpmatrix%7D%202%26-1%5C%5C%20-1%262%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7DB%3D%20%5Cbegin%7Bpmatrix%7D%201%5C%5C%200%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7DC%3D%20%5Cbegin%7Bpmatrix%7D%201%260%5C%5C%200%261%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7D%5Cmbox%7Band%7D%5Chspace%7B0.2%20cm%7DD%3D%20%5Cbegin%7Bpmatrix%7D%200%260%5C%5C%200%260%20%5Cend%7Bpmatrix%7D."></p>
+
+Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="https://latex.codecogs.com/gif.latex?%5Cgamma%3D0">, <img src="https://latex.codecogs.com/gif.latex?x_0%3D%5B1.4%3B1.4%5D">, <img src="https://latex.codecogs.com/gif.latex?q%5Cequiv%200">, <img src="https://latex.codecogs.com/gif.latex?z%28t%29%3D%5B%5Csin%28t%29%3B%5Csin%28t%29%5D"> and T=10. We obtain the following figures:
+
+<p align="center">
+  <img src="state_1.png">
+</p>
+
+<p align="center">
+  <img src="state_2.png">
+</p>
+
+<p align="center">
+  <img src="control.png">
+</p>
+\begin{figure}[htp]
+	\begin{center}
+		% Requires \usepackage{graphicx}
+		% replace aims_logo.eps by your figure file name
+		\includegraphics[width=15cm]{state_1.png}\\
+		\caption{first component of the optimal state.}\label{graph_1}
+	\end{center}
+\end{figure}
+\begin{figure}[htp]
+	\begin{center}
+		% Requires \usepackage{graphicx}
+		% replace aims_logo.eps by your figure file name
+		\includegraphics[width=15cm]{state_2.png}\\
+		\caption{second component of the optimal state.}\label{graph_2}
+	\end{center}
+\end{figure}
+\begin{figure}[htp]
+	\begin{center}
+		% Requires \usepackage{graphicx}
+		% replace aims_logo.eps by your figure file name
+		\includegraphics[width=15cm]{control.png}\\
+		\caption{optimal control.}\label{graph_3}
+	\end{center}
+\end{figure}
+
+Since the parameter <img src="https://latex.codecogs.com/gif.latex?%5Cbeta"> is large enough and the control acts only on the first component of the state equation
+- the first component of the state is close to the target;
+- the second component of the state is less close to the target;
+- the control is far from its target.
 
 
 
-## Auth
+
+
+## Author
 
 * **Dario Pighin**
 
