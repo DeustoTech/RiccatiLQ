@@ -36,30 +36,6 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 <p align="center">
   <img src="control.png">
 </p>
-\begin{figure}[htp]
-	\begin{center}
-		% Requires \usepackage{graphicx}
-		% replace aims_logo.eps by your figure file name
-		\includegraphics[width=15cm]{state_1.png}\\
-		\caption{first component of the optimal state.}\label{graph_1}
-	\end{center}
-\end{figure}
-\begin{figure}[htp]
-	\begin{center}
-		% Requires \usepackage{graphicx}
-		% replace aims_logo.eps by your figure file name
-		\includegraphics[width=15cm]{state_2.png}\\
-		\caption{second component of the optimal state.}\label{graph_2}
-	\end{center}
-\end{figure}
-\begin{figure}[htp]
-	\begin{center}
-		% Requires \usepackage{graphicx}
-		% replace aims_logo.eps by your figure file name
-		\includegraphics[width=15cm]{control.png}\\
-		\caption{optimal control.}\label{graph_3}
-	\end{center}
-\end{figure}
 
 Since the parameter <img src="https://latex.codecogs.com/gif.latex?%5Cbeta"> is large enough and the control acts only on the first component of the state equation
 - the first component of the state is close to the target;
