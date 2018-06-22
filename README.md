@@ -43,6 +43,9 @@ Since the parameter <img src="https://latex.codecogs.com/gif.latex?%5Cbeta"> is 
 - the control is far from its target.
 
 
+Taking constant targets and assuming (A,B) controllable and (A,C) observable, one can check the fulfillment of the turnpike property (see, e.g., [[1](https://epubs.siam.org/doi/pdf/10.1137/130907239)] and [[3](https://arxiv.org/abs/1402.3263)]).
+
+
 
 
 
@@ -56,6 +59,8 @@ Since the parameter <img src="https://latex.codecogs.com/gif.latex?%5Cbeta"> is 
 on Control and Optimization, 51 (2013), pp. 4242–4273.
 
 [[2](https://www.ljll.math.upmc.fr/trelat/fichiers/livreopt2.pdf)] E. TRÉLAT, _Contrôle optimal: théorie & applications_, Vuibert, 2008.
+
+[[3](https://arxiv.org/abs/1402.3263)] E. TRÉLAT and E. ZUAZUA, _The turnpike property in finite-dimensional nonlinear optimal control_, Journal of Differential Equations, 258 (2015), pp. 81–114.
 
 ## Acknowledgments
 
