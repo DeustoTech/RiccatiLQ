@@ -14,7 +14,7 @@ In the above control problem, <img src="https://latex.codecogs.com/gif.latex?A%5
 
 By the Direct Methods in the Calculus of Variations and strict convexity, the above problem admits an unique optimal control.
 
-We compute the optimal pair (optimal control, optimal state) by using the well-known Riccati's theory (see, for instance, [1, Lemma 2.6] and [2, section 4.3]).
+We compute the optimal pair (optimal control, optimal state) by using the well-known Riccati's theory (see, for instance, [[1](http://paginaspersonales.deusto.es/enrique.zuazua/documentos_public/archivos/publicaciones/optimal10.pdf), Lemma 2.6] and [[2](https://www.ljll.math.upmc.fr/trelat/fichiers/livreopt2.pdf), section 4.3]).
 
 For more details, we refer to the file "RiccatiAlgorithm.pdf".
 
@@ -52,10 +52,10 @@ Since the parameter <img src="https://latex.codecogs.com/gif.latex?%5Cbeta"> is 
 
 ## References
 
-[1] A. PORRETTA and E. ZUAZUA, _Long time versus steady state optimal control_, SIAM Journal
+[1](http://paginaspersonales.deusto.es/enrique.zuazua/documentos_public/archivos/publicaciones/optimal10.pdf) A. PORRETTA and E. ZUAZUA, _Long time versus steady state optimal control_, SIAM Journal
 on Control and Optimization, 51 (2013), pp. 4242–4273.
 
-[2] E. TRÉLAT, _Contrôle optimal: théorie & applications_, Vuibert, 2008.
+[2](https://www.ljll.math.upmc.fr/trelat/fichiers/livreopt2.pdf) E. TRÉLAT, _Contrôle optimal: théorie & applications_, Vuibert, 2008.
 
 ## Acknowledgments
 
