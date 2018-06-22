@@ -1,6 +1,8 @@
-function [ uopt, x, h] = lqtarget( A,B,C,D,beta, gamma, q, z, x0,T,Nt )
+function [ uopt, x] = lqtarget( A,B,C,D,beta, gamma, q, z, x0,T,Nt )
 %We look for the optimal pair (uopt, xopt) for the optimal control problem:
-%min J(u)=\frac{1}{2}[\int_0^T|u(t)-q(t)|^2dt+\beta\int_0^T|C(x(t)-z(t))|^2dt+\gamma\|D(x(T)-z(T))\|^2].
+%min
+%J(u)=\frac{1}{2}[\int_0^T|u(t)-q(t)|^2dt+\beta\int_0^T|C(x(t)-z(t))|^2dt+\gamma\|D(x(T)-z(T))\|^2],
+%where
 %x_t+Ax=Bu,    t\in (0,T)
 %x(0)=x_0.
 %The partition of the time interval in the discretization is:
@@ -8,13 +10,15 @@ function [ uopt, x, h] = lqtarget( A,B,C,D,beta, gamma, q, z, x0,T,Nt )
 %We employ Riccati's theory. We follow the approach of:
 %"Contr{\^o}le optimal: th{\'e}orie \& applications",
 %by professor Emmanuel Tr{\'e}lat, Proposition 4.4.1 page 60.
-%WARNING:
+%WARNING(1):
 %both the control target and the state target are function of time,
 %beta\geq 0,
 %gamma\geq 0,
 %x0\in\mathbb{R}^{size(A,1)}
 %T>0
 %Nt\in\mathbb{N}.
+%WARNING(2):
+%Different notation between this code and the aforementioned book.
 
 %Compatibility conditions.
 
@@ -125,15 +129,14 @@ end
 ct=zeros(Nt,m);
 st=zeros(Nt,n); 
 for i=1:lt
-    ct(i,:)=q(tout(i));
-    st(i,:)=z(tout(i));
+    ct(i,:)=transpose(q(tout(i)));
+    st(i,:)=transpose(z(tout(i)));
 end                
 
 if (n <= 2 & m <= 2)
 
 switch m
     case 1
-
         switch n
             case 1
                 figure(1)
@@ -186,7 +189,7 @@ switch m
                 plot(tout,st(:,2),'k', 'LineWidth', 1,'LineStyle','--');
                 title("2^{nd} component of optimal state for LQ")
                 xlabel("t")
-                ylabel("x_1")
+                ylabel("x_2")
                 legend("2^{nd} component of optimal state", "2^{nd} component of state target",'Location','southeast');
                 set(gca,'FontSize',26)
     end
