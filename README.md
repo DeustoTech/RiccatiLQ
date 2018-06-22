@@ -42,8 +42,11 @@ Since the parameter <img src="https://latex.codecogs.com/gif.latex?%5Cbeta"> is 
 - the second component of the state is less close to the target;
 - the control is far from its target.
 
-
-Taking constant targets and assuming (A,B) controllable and (A,C) observable, one can check the fulfillment of the turnpike property (see, e.g., [[1](https://epubs.siam.org/doi/pdf/10.1137/130907239)] and [[3](https://arxiv.org/abs/1402.3263)]).
+The algorithm described in this guide can be employed to test the fulfillment of the turnpike property (see, e.g., [[1](https://epubs.siam.org/doi/pdf/10.1137/130907239)] and [[3](https://arxiv.org/abs/1402.3263)]). In agreement with the theory, the turnpike effect is evident if:
+- the targets are constants;
+- (A,B) is controllable;
+- (A,C) is observable, <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3E0"> and <img src="https://latex.codecogs.com/gif.latex?%5Cgamma%3D0">;
+- the time horizon T is large enough.
 
 
 
