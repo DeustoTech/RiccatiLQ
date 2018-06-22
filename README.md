@@ -16,7 +16,7 @@ By the Direct Methods in the Calculus of Variations and strict convexity, the ab
 
 We compute the optimal pair (optimal control, optimal state) by using the well-known Riccati's theory (see, for instance, [[1](https://epubs.siam.org/doi/pdf/10.1137/130907239), Lemma 2.6] and [[2](https://www.ljll.math.upmc.fr/trelat/fichiers/livreopt2.pdf), section 4.3]).
 
-For further details regarding the algorithm, we refer to "RiccatiAlgorithm.pdf".
+For further details regarding the algorithm, we refer to [RiccatiAlgorithm.pdf](https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/RiccatiAlgorithm.pdf).
 
 ## Example
 
