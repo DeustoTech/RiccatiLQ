@@ -52,10 +52,10 @@ Since the parameter <img src="https://latex.codecogs.com/gif.latex?%5Cbeta"> is 
 
 ## References
 
-[1](http://paginaspersonales.deusto.es/enrique.zuazua/documentos_public/archivos/publicaciones/optimal10.pdf) A. PORRETTA and E. ZUAZUA, _Long time versus steady state optimal control_, SIAM Journal
+[[1](http://paginaspersonales.deusto.es/enrique.zuazua/documentos_public/archivos/publicaciones/optimal10.pdf)] A. PORRETTA and E. ZUAZUA, _Long time versus steady state optimal control_, SIAM Journal
 on Control and Optimization, 51 (2013), pp. 4242–4273.
 
-[2](https://www.ljll.math.upmc.fr/trelat/fichiers/livreopt2.pdf) E. TRÉLAT, _Contrôle optimal: théorie & applications_, Vuibert, 2008.
+[[2](https://www.ljll.math.upmc.fr/trelat/fichiers/livreopt2.pdf)] E. TRÉLAT, _Contrôle optimal: théorie & applications_, Vuibert, 2008.
 
 ## Acknowledgments
 
