@@ -30,12 +30,26 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 </p>
 
 <p align="center">
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank">Click here to open image 1.</a>
+</p>
+
+<p align="center">
   <img src="state_2.png">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_2.png" target="_blank">Click here to open image 1.</a>
 </p>
 
 <p align="center">
   <img src="control.png">
 </p>
+
+<p align="center">
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank">Click here to open image 1.</a>
+</p>
+
+
 
 Since the parameter <img src="https://latex.codecogs.com/gif.latex?%5Cbeta"> is large enough and the control acts only on the first component of the state equation
 * the first component of the state is close to the target;
