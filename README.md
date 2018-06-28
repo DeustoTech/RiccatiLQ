@@ -29,11 +29,11 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank">control.png</a>.
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank"><img src="state_1.png">
+  <img src="state_1.png">
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_2.png" target="_blank"><img src="state_2.png">
+  <img src="state_2.png">
 </p>
 
 <p align="center">
