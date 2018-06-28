@@ -30,7 +30,7 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank">Click here to open image 1.</a>
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank">Click here to open control.png.</a>
 </p>
 
 <p align="center">
@@ -38,7 +38,7 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_2.png" target="_blank">Click here to open image 1.</a>
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_2.png" target="_blank">Click here to open state_1.png.</a>
 </p>
 
 <p align="center">
@@ -46,7 +46,7 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank">Click here to open image 1.</a>
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank">Click here to open state_2.png.</a>
 </p>
 
 
