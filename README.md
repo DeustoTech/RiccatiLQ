@@ -37,7 +37,7 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank"><img src="control.png">
+  <img src="control.png">
 </p>
 
 
