@@ -23,14 +23,13 @@ For further details regarding the algorithm, we refer to [RiccatiAlgorithm.pdf](
 Take
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?A%3D%20%5Cbegin%7Bpmatrix%7D%202%26-1%5C%5C%20-1%262%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7DB%3D%20%5Cbegin%7Bpmatrix%7D%201%5C%5C%200%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7DC%3D%20%5Cbegin%7Bpmatrix%7D%201%260%5C%5C%200%261%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7D%5Cmbox%7Band%7D%5Chspace%7B0.2%20cm%7DD%3D%20%5Cbegin%7Bpmatrix%7D%200%260%5C%5C%200%260%20%5Cend%7Bpmatrix%7D."></p>
 
-Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="https://latex.codecogs.com/gif.latex?%5Cgamma%3D0">, <img src="https://latex.codecogs.com/gif.latex?x_0%3D%5B1.4%3B1.4%5D">, <img src="https://latex.codecogs.com/gif.latex?q%5Cequiv%200">, <img src="https://latex.codecogs.com/gif.latex?z%28t%29%3D%5B%5Csin%28t%29%3B%5Csin%28t%29%5D"> and T=10. We obtain the following figures:
+Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="https://latex.codecogs.com/gif.latex?%5Cgamma%3D0">, <img src="https://latex.codecogs.com/gif.latex?x_0%3D%5B1.4%3B1.4%5D">, <img src="https://latex.codecogs.com/gif.latex?q%5Cequiv%200">, <img src="https://latex.codecogs.com/gif.latex?z%28t%29%3D%5B%5Csin%28t%29%3B%5Csin%28t%29%5D"> and T=10. We obtain figures
+<a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank">state_1.png</a>,
+<a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_2.png" target="_blank">state_2.png</a> and
+<a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank">control.png</a>.
 
 <p align="center">
   <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank"><img src="state_1.png">
-</p>
-
-<p align="center">
-<a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank">Click here</a> to open state_1.png.
 </p>
 
 <p align="center">
@@ -38,15 +37,7 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_2.png" target="_blank">Click here</a> to open state_2.png.
-</p>
-
-<p align="center">
   <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank"><img src="control.png">
-</p>
-
-<p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank">Click here</a> to open control.png.
 </p>
 
 
