@@ -26,11 +26,11 @@ Take
 Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="https://latex.codecogs.com/gif.latex?%5Cgamma%3D0">, <img src="https://latex.codecogs.com/gif.latex?x_0%3D%5B1.4%3B1.4%5D">, <img src="https://latex.codecogs.com/gif.latex?q%5Cequiv%200">, <img src="https://latex.codecogs.com/gif.latex?z%28t%29%3D%5B%5Csin%28t%29%3B%5Csin%28t%29%5D"> and T=10. We obtain the following figures:
 
 <p align="center">
-  <img src="state_1.png">
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank"><img src="state_1.png">
 </p>
 
-<p align="center">Click
-<a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank">here</a> to open state_1.png.
+<p align="center">
+<a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_1.png" target="_blank">Click here</a> to open state_1.png.
 </p>
 
 <p align="center">
@@ -38,7 +38,7 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_2.png" target="_blank">Click here to open state_2.png.</a>
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/state_2.png" target="_blank">Click here</a> to open state_2.png.
 </p>
 
 <p align="center">
@@ -46,7 +46,7 @@ Choose <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3D26">, <img src="
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank">Click here to open control.png.</a>
+  <a href="https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/control.png" target="_blank">Click here</a> to open control.png.
 </p>
 
 
