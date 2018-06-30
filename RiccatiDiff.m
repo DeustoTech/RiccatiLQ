@@ -12,45 +12,20 @@ function [ tout, E ] = RiccatiDiff( A,B,C, D, beta, gamma, T,Nt)
 % \end{cases}
 %The partition of the time interval in the discretization is:
 %tout=linspace(0,T,Nt).
-%We employ the linear representation of the Riccati Differential Equation.
-%See, for instance, "Contr{\^o}le optimal: th{\'e}orie \& applications"
-%by professor Emmanuel Tr{\'e}lat, Proposition 4.3.5 page 58.
-%WARNING: Different notation between this code and the above book.
+%For Riccati Differential Equation see, for instance,
+%"Contr{\^o}le optimal: th{\'e}orie \& applications"
+%by professor Emmanuel Tr{\'e}lat, section 4.3.
 
-
-%We define the matrix
-M=[A,B*transpose(B);(beta)*transpose(C)*C,-transpose(A)];
-
-%STEP 1. We compute the resolvent (matrix exponential) of M.
-
+options=odeset('RelTol',1e-12,'AbsTol',1e-14);
+INIT=(0.5)*(gamma)*transpose(D)*D;
+INITvect = INIT(:); %Convert from "n"-by-"n" to "n^2"-by-1
 tout=linspace(0,T,Nt);
-%We define the tensor where we will store
-%the resolvent (matrix exponential) of M at the time instances in "tout".
-R = repmat(0, [Nt, 2*size(A,1), 2*size(A,1)]);
-for i=1:Nt
-   R(i,:,:)=expm(tout(i)*M); 
-end
-%We define blocks of R
-R1 = repmat(0, [Nt, size(A,1), size(A,1)]);
-R2 = repmat(0, [Nt, size(A,1), size(A,1)]);
-R3 = repmat(0, [Nt, size(A,1), size(A,1)]);
-R4 = repmat(0, [Nt, size(A,1), size(A,1)]);
-for i=1:Nt
-    for j=1:size(A,1)
-        for l=1:size(A,1)
-            R1(i,j,l)=R(i,j,l);
-            R2(i,j,l)=R(i,j,size(A,1)+l);
-            R3(i,j,l)=R(i,size(A,1)+j,l);
-            R4(i,j,l)=R(i,size(A,1)+j,size(A,1)+l);
-        end
-    end
-end
+[tout, Evect] = ode113(@(t,Evect)RiccatiDyn(t, Evect, A,B,C, beta), tout, INITvect,options);
 
-%STEP 2. We determine the Riccati operator.
-
-E = repmat(0, [Nt, size(A,1), size(A,1)]);
-for i=1:Nt
-    E(i,:,:)=(squeeze(R3(i,:,:))+(gamma)*squeeze(R4(i,:,:))*transpose(D)*D)*inv(squeeze(R1(i,:,:))+(gamma)*squeeze(R2(i,:,:))*transpose(D)*D);
+netg=length(tout);
+E = repmat(0, [netg, size(A,1), size(A,1)]);
+for i=1:length(tout)
+E(i,:,:) = reshape(Evect(i,:), size(A)); %Convert from "n^2"-by-1 to "n"-by-"n"
 end
 
 
