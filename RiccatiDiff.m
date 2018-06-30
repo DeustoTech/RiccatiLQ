@@ -16,11 +16,18 @@ function [ tout, E ] = RiccatiDiff( A,B,C, D, beta, gamma, T,Nt)
 %"Contr{\^o}le optimal: th{\'e}orie \& applications"
 %by professor Emmanuel Tr{\'e}lat, section 4.3.
 
+%STEP 1: We solve the Riccati Differential Equation
+%in a vector notation, by employing "ode113".
+%We impose strict restrictions
+%both on the relative erro and absolute error.
+
 options=odeset('RelTol',1e-12,'AbsTol',1e-14);
 INIT=(0.5)*(gamma)*transpose(D)*D;
 INITvect = INIT(:); %Convert from "n"-by-"n" to "n^2"-by-1
 tout=linspace(0,T,Nt);
 [tout, Evect] = ode113(@(t,Evect)RiccatiDyn(t, Evect, A,B,C, beta), tout, INITvect,options);
+
+%STEP 2: We reshape "Evect" in the matrix form "E".
 
 netg=length(tout);
 E = repmat(0, [netg, size(A,1), size(A,1)]);

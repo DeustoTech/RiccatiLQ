@@ -10,9 +10,10 @@ function [ dEdt ] = RiccatiDyn( t,E,A,B,C, beta)
 
 
 
-%function dXdt = mRiccati(t, X, A, B, Q)
+%We define the Dynamics related to the Riccati Defferential Equation.
+
 E = reshape(E, size(A,1),size(A,1)); %Convert from "n^2"-by-1 to "n"-by-"n"
-dEdt = (beta)*transpose(C)*C-(E*A+transpose(A)*E)-E*B*transpose(B)*E; %Determine derivative
+dEdt = (beta)*transpose(C)*C-(E*A+transpose(A)*E)-E*B*transpose(B)*E; %Dynamics in matrix notation.
 dEdt = dEdt(:); %Convert from "n"-by-"n" to "n^2"-by-1
 
 
