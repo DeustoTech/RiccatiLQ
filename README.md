@@ -69,6 +69,7 @@ In the above control problem, <img src="https://latex.codecogs.com/gif.latex?A%5
 **Assumptions**
 * the targets <img src="https://latex.codecogs.com/gif.latex?q"> and <img src="https://latex.codecogs.com/gif.latex?z"> satisfies the equation
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}z(t)&plus;Az(t)=Bq(t)\hspace{0.6&space;cm}&space;t\in&space;(0,&plus;\infty);"></p>
+
 * (A,B) is controllable and (A,C) is observable.
 
 The above assumptions guarantee the existence of a control <img src="https://latex.codecogs.com/gif.latex?u\in&space;L^2_{loc}((0,&plus;\infty);\mathbb{R}^m)"> such that <img src="https://latex.codecogs.com/gif.latex?J^{\infty}(u)<&plus;\infty">. By the Direct Methods in the Calculus of Variations and strict convexity, the above problem admits an unique optimal control <img src="https://latex.codecogs.com/gif.latex?u^{\infty}">. The corresponding optimal state is denoted by <img src="https://latex.codecogs.com/gif.latex?x^{\infty}">.
