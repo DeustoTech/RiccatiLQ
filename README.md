@@ -1,4 +1,4 @@
-# How to solve an LQ problem with time-varying targets by Riccati's theory
+# How to solve LQ problems with time-varying targets by Riccati's theory
 
 In this short tutorial, we explain how to use Riccati's theory to solve an LQ control problem with targets. The related MATLAB code is downloadable freely. We start considering the case of finite time horizon to later address the case of infinite time horizon.
 
