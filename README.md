@@ -1,6 +1,8 @@
 # How to solve an LQ problem with time-varying targets by Riccati's theory
 
-In this short tutorial, we explain how to use Riccati's theory to solve an LQ control problem with targets. The related MATLAB code is downloadable freely.
+In this short tutorial, we explain how to use Riccati's theory to solve an LQ control problem with targets. The related MATLAB code is downloadable freely. We start considering the case of finite time horizon to later address the case of infinite time horizon.
+
+## Finite time horizon
 
 We consider the optimal control problem:
 
@@ -18,7 +20,7 @@ We compute the optimal pair (optimal control, optimal state) by using the well-k
 
 For further details regarding the algorithm, we refer to [RiccatiAlgorithm.pdf](https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/RiccatiAlgorithm.pdf).
 
-## Example
+### Example
 
 Take
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?A%3D%20%5Cbegin%7Bpmatrix%7D%202%26-1%5C%5C%20-1%262%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7DB%3D%20%5Cbegin%7Bpmatrix%7D%201%5C%5C%200%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7DC%3D%20%5Cbegin%7Bpmatrix%7D%201%260%5C%5C%200%261%20%5Cend%7Bpmatrix%7D%2C%5Chspace%7B0.2%20cm%7D%5Cmbox%7Band%7D%5Chspace%7B0.2%20cm%7DD%3D%20%5Cbegin%7Bpmatrix%7D%200%260%5C%5C%200%260%20%5Cend%7Bpmatrix%7D."></p>
@@ -52,6 +54,26 @@ The algorithm described in this guide can be employed to test the fulfillment of
 * (A,B) is controllable;
 * (A,C) is observable, <img src="https://latex.codecogs.com/gif.latex?%5Cbeta%3E0"> and <img src="https://latex.codecogs.com/gif.latex?%5Cgamma%3D0">;
 * the time horizon T is large enough.
+
+## Infinite time horizon
+
+We consider the optimal control problem
+
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?\min_{u\in&space;L^2_{loc}(0,\infty)}J^{\infty}(u)=\frac12&space;\left[&space;\int_0^{\infty}&space;\|u(t)-q(t)\|^2&space;dt&plus;\beta\int_0^{\infty}&space;\|C(x(t)-z(t))\|^2&space;dt\right],"></p>
+where:
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?\begin{cases}&space;\frac{d}{dt}x(t)&plus;Ax(t)=Bu(t)\hspace{0.6&space;cm}&space;&&space;t\in&space;(0,&plus;\infty)\\&space;x(0)=x_0.&space;\end{cases}"></p>
+
+In the above control problem, <img src="https://latex.codecogs.com/gif.latex?A%5Cin%5Cmathcal%7BM%7D_%7Bn%5Ctimes%20n%7D">, <img src="https://latex.codecogs.com/gif.latex?B%5Cin%20%5Cmathcal%7BM%7D_%7Bn%5Ctimes%20m%7D"> and <img src="https://latex.codecogs.com/gif.latex?C%5Cin%20%5Cmathcal%7BM%7D_%7Br%5Ctimes%20n%7D">, while the state <img src="https://latex.codecogs.com/gif.latex?x:[0,&plus;\infty)\longrightarrow&space;\mathbb{R}^n">. The control target is <img src="https://latex.codecogs.com/gif.latex?q\in&space;L^2((0,T);\mathbb{R}^m)"> and the state target is <img src="https://latex.codecogs.com/gif.latex?z\in&space;W^{1,2}((0,T);\mathbb{R}^n)">.
+<img src="https://latex.codecogs.com/gif.latex?%5Cbeta%5Cgeq%200"> and <img src="https://latex.codecogs.com/gif.latex?%5Cgamma%5Cgeq%200"> are positive parameters.
+
+*Assumptions*
+1. Item 1 the targets <img src="https://latex.codecogs.com/gif.latex?q"> and <img src="https://latex.codecogs.com/gif.latex?z"> satisfies the equation
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}z(t)&plus;Az(t)=Bq(t)\hspace{0.6&space;cm}&space;t\in&space;(0,&plus;\infty);"></p>
+1. Item 2 (A,B) is controllable and (A,C) is observable.
+
+The above assumptions guarantee the existence of a control <img src="https://latex.codecogs.com/gif.latex?u\in&space;L^2_{loc}((0,&plus;\infty);\mathbb{R}^m)$u\in L^2_{loc}((0,+\infty);\mathbb{R}^m)"> such that <img src="https://latex.codecogs.com/gif.latex?J^{\infty}(u)<&plus;\infty">. By the Direct Methods in the Calculus of Variations and strict convexity, the above problem admits an unique optimal control <img src="https://latex.codecogs.com/gif.latex?u^{\infty}">. The corresponding optimal state is denoted by <img src="https://latex.codecogs.com/gif.latex?x^{\infty}">.
+
+Further details are available in the second section of [RiccatiAlgorithm.pdf](https://github.com/ChairOfComputationalMathematics/RiccatiLQ/blob/master/RiccatiAlgorithm.pdf).
 
 
 
