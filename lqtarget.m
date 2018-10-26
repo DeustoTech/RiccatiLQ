@@ -75,7 +75,7 @@ m = size(B,2);
 %STEP 1. We solve Riccati Differential Equation
 %related to the control problem with zero targets.
 
-[ tout, E ] = RiccatiDiff( A,B,C, D, beta, gamma, T,Nt)
+[ tout, E ] = RiccatiDiff( A,B,C, D, beta, gamma, T,Nt);
 
 %STEP 2. Determination of the remainder function h^T.
 
