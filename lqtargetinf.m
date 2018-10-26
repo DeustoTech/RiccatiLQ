@@ -64,7 +64,7 @@ m = size(B,2);
 %STEP 1. We solve Algebraic Riccati Equation
 %related to the control problem with zero targets.
 
-[K,S,e] = lqr(-A,B,transpose(C)*C,eye(m),zeros(n,m));
+[X,L,K] = care(-A,B,transpose(C)*C);
 
 %STEP 2: We determine the optimal state x
 %by solving a closed loop system given by Riccati's operator.
@@ -262,6 +262,3 @@ end
 
 
 end
-
-
-
